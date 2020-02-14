@@ -1,0 +1,504 @@
+@import url ('common.css');
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    background: #FFF;
+    
+}
+header:after{
+    content: '';
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    background: rgba(255,255,255,0.8);
+    display: none;
+}
+
+header:hover .head ul li div,
+header:hover:after{
+    display: block;
+}
+
+header .head {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .head h1 {}
+header .head h1 a {
+    font-size: 50px;
+    margin-left: 55px;
+    color: #333;
+    font-family: 'AmeriGarmnd BT';
+    font-style: bold;
+}
+header .head ul {
+    margin: 30px 0;
+}
+header .head ul li {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+}
+
+
+header .head ul li a {
+    position: relative;
+    color: #333;
+    font-family: '나눔고딕';
+    padding: 0px 60PX;
+}
+
+header .head ul li a:hover {
+    color: #ffc000
+}
+
+header .head ul li div {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    margin-top: 14px;
+    display: none;
+}
+
+header .head ul li div a {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-family: '나눔고딕';
+    color: 333;
+}
+header .head nav {
+    position: relative;
+}
+header .head nav a {
+    background: #1a3d4d;
+    width: 370px;
+    height: 81px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    color: #fff;
+    font-family: '나눔고딕';
+    position: relative;
+    overflow: hidden;
+}
+header .head nav a:after {
+    content: '';
+    background: #ffc000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    transition: .5s;
+}
+
+header .head nav a:hover:after {
+    left: 0%;
+    top: 0;
+}
+
+header .head nav a span {
+    position: absolute;
+    top: 25px;
+    right: 110px;
+    color: #fff;
+    z-index: 9;
+}
+
+header .head nav a span img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 1920px;
+}
+
+section .main {
+    overflow: hidden;
+    position: relative;
+    font-size: 0;
+}
+
+section .main figure {}
+
+section .main figure img {
+    width: 100%;
+}
+
+section .main img:nth-of-type(1){}
+section .main img:nth-of-type(2){
+    display: none;
+}
+section .main img:nth-of-type(3){
+    display: none;
+}
+section .main img:nth-of-type(4){
+    display: none;
+}
+
+
+section .main p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-family: '나눔고딕';
+}
+
+section .main p strong {
+    font-size: 120px;
+    color: #fff;
+    font-family: 'AmeriGarmnd BT';
+}
+
+section .main div {
+    position: absolute;
+    top: 52%;
+    right: 100px;
+    width: 50px;
+    height: 40px;
+}
+section .main div span {
+    width: 40px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+section .main div span:nth-of-type(1) {
+    top: 0;
+}
+section .main div span:nth-of-type(2) {
+    top: 15px;
+}
+section .main div span:nth-of-type(3) {
+    top: 30px;
+}
+section .main div span:nth-of-type(4) {
+    top: 45px;
+}
+
+
+
+
+
+
+
+
+section .main div span:hover {
+    width: 60px;
+    height: 6px;
+    background: #1a3d4d;
+    position: absolute;
+    transition: .2s;
+}
+
+
+section .main div span a {}
+
+
+
+
+
+
+
+section figure {
+    overflow: hidden;
+    position: relative;
+}
+
+section figure img {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+section figure .infinity {
+    background: #eee;
+    width: 960px;
+    height: 760px;
+    float: right;
+}
+
+section figure .infinity figcaption {
+    position: absolute;
+    left: 68%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 50px;
+    color: #333;
+    font-family: '나눔고딕';
+}
+
+section figure .infinity figcaption span {
+    white-space: pre-line;
+    color: #333;
+    margin-top: 15px;
+}
+
+section figure .infinity figcaption a {
+    color: #333;
+    background: #fff;
+    padding: 10PX 30px;
+    margin-top: 100px
+}
+
+section figure .accommodation {
+    background: #eee;
+    width: 960px;
+    height: 760px;
+    float: left;
+}
+
+section figure .accommodation figcaption {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 50px;
+    color: #333;
+    font-family: '나눔고딕';
+    text-align: end;
+}
+
+section figure .accommodation figcaption span {
+    white-space: pre-line;
+    color: #333;
+    margin-top: 15px;
+}
+
+section figure .accommodation figcaption a {
+    color: #333;
+    background: #fff;
+    padding: 10px 30PX;
+    margin-top: 100px
+}
+
+section figure .infinity figcaption a:hover,
+section figure .accommodation figcaption a:hover {
+    background: #ffc000;
+    transition: .5s;
+}
+
+section figure img {
+    float: left;
+}
+
+section figure:nth-last-of-type(1) img {
+    float: right;
+}
+
+
+
+
+section .content {
+    position: relative;
+}
+section .content img {}
+section .content ul {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    display: flex;
+}
+section .content ul li {
+    width: 350px;
+    height: 480px;
+    background: rgba(255,255,255,0.1);
+    display: inline-block;
+    margin: 30px;
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+section .content ul li span {
+    color: #fff;
+    margin: 50px;
+    
+}
+
+section .content ul li span div{
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    margin: 10px 0;
+}
+
+section .content ul li span strong {
+    color: #fff;
+    font-family: '나눔고딕';
+    letter-spacing: 3px;/*자간*/
+}
+
+section .content ul li span p {
+    color: #fff;
+    white-space: pre-line;
+    line-height: 30px;/*행간*/
+    font-family: '나눔고딕';
+}
+
+
+section .content ul li:hover{
+    background: #1a3d4d;
+    opacity: .8;
+    transition: opacity .3s;
+}
+
+section .content ul li:hover:after{
+    content: 'MORE';
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px 30px;
+    text-align: center;
+    transition: opacity .3s;
+    padding: 10px 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%);
+    font-family: '나눔고딕';
+    color: #333;
+    font-weight: 500;
+}
+
+
+footer {
+    clear: both;
+    width: 100%;
+    height: 0 auto;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+}
+
+footer div h2 {
+    font-size: 50px;
+    margin: 0 70px 0 400px;
+    color: #333;
+    font-family: 'AmeriGarmnd BT';
+    font-style: bold;
+}
+
+footer div span {
+}
+footer div span p:nth-of-type(1) {
+    margin: 20px 200px 20px 0;
+    display: flex;
+    white-space: pre-line;
+    font-size: 15px;
+    line-height: 25px;
+}
+    
+footer div span p a {
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 0 20px;
+}
+
+footer div span p a:first-child {
+    padding: 0 20px 0 0;
+}
+
+
+aside {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
+
+aside a {
+    background: #1a3d4d;
+    border: 1px solid #1a3d4d;
+    border-radius: 20px 20px;
+    padding: 30px 24px;
+    color: #fff;
+}
+
+aside a:hover {
+    background: #00202c;
+    transition: 1s;
+}
+
+
+.pop {
+    position: fixed;
+    top: 81px;
+    left: 20px;
+    width: 360px;
+    z-index: 12;
+}
+.pop figure {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    font-size: 0;
+}
+.pop figure img {
+    width: 100%;
+}
+.pop figure figcaption {
+    width: 100%;
+    text-align: center;
+    white-space: pre-line;
+    color: #333;
+    line-height: 45px;
+    padding: 25px 0;
+}
+.pop figure figcaption strong {
+    color: #f00;
+    font-size: 30px;
+    letter-spacing: 6px;
+}
+.pop figure span {
+    width: 100%;
+    background: #ccc;
+    padding: 12px 0;
+}
+.pop figure span p {
+    text-align: center;
+    color: #333;
+}
+.pop figure span p a {
+    padding: 0 30px;
+    color: #333;
+}
+
+.pop figure span p a:hover {
+    color: #1a3d4d;
+    text-decoration: underline;
+}
